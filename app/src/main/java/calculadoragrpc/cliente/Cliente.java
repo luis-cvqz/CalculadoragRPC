@@ -15,10 +15,6 @@ import com.proto.calculadora.Calculadora.SumResponse;
 import com.proto.calculadora.Calculadora.ResRequest;
 import com.proto.calculadora.Calculadora.ResResponse;
 
-import java.net.MalformedURLException;
-import java.rmi.NotBoundException;
-import java.rmi.RemoteException;
-
 public class Cliente {
     public static void main(String[] args) {
         int puerto = 7878;
