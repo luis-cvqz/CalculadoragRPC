@@ -39,8 +39,8 @@ message ResResponse {
 }
 
 service CalculadoraService {
-  rpc multiplicar(DivRequest) returns (DivResponse);
-  rpc dividir(MulRequest) returns (DivResponse);
+  rpc multiplicar(MulRequest) returns (MulResponse);
+  rpc dividir(DivRequest) returns (DivResponse);
   rpc sumar(SumRequest) returns (SumResponse);
   rpc restar(ResRequest) returns (ResResponse);
 }
