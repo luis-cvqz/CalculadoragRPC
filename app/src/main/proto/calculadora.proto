@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+option java_package = "com.proto.calculadora";
+
+message DivRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message MulRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message SumRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message ResRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message DivResponse {
+  int32 res = 1;
+}
+
+message MulResponse {
+  int32 res = 1;
+}
+
+message SumResponse {
+  int32 res = 1;
+}
+
+message ResResponse {
+  int32 res = 1;
+}
+
+service CalculadoraService {
+  rpc multiplicar(DivRequest) returns (DivResponse);
+  rpc dividir(MulRequest) returns (DivResponse);
+  rpc sumar(SumRequest) returns (SumResponse);
+  rpc restar(ResRequest) returns (ResResponse);
+}
