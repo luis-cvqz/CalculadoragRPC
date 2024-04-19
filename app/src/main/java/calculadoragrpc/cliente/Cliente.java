@@ -25,12 +25,13 @@ public class Cliente {
 
         while (true) {
             String opt = JOptionPane.showInputDialog(
-                    "Calcular\n" +
-                            "Suma............. (1)\n" +
-                            "Resta............ (2)\n" +
-                            "Multiplicación... (3)\n" +
-                            "División......... (4)\n" +
-                            "Cancelar para salir"
+                """
+                    Calcular
+                    (1) -> Suma
+                    (2) -> Resta
+                    (3) -> Multiplicación
+                    (4) -> División
+                    Cancelar para salir"""
             );
 
             if (opt == null) {
